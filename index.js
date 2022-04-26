@@ -330,7 +330,7 @@ $(document).ready(function(){
     });
     $( "#rules-button" ).click(function() {
         $( "#dialog" ).dialog({
-            width: 750
+            width: width
         });
     });
 })
