@@ -292,22 +292,33 @@ function newGuess(name) {
 $(document).ready(function(){
     $( "#answer_l").text("The correct answer was " + randomChar + ".")
     $( "#answer_w").text(randomChar + " was the correct answer!")
+    if (window.innerWidth/2 < 650) {
+        width = innerWidth
+    } else {
+        width =  window.innerWidth/2
+    }
     $( "#win" ).dialog({
         autoOpen: false,
-        width: window.innerWidth/2
+        width: width
     });
     $( "#dialog" ).dialog({
-        width: window.innerWidth/2
+        width: width
     });
     $( "#loss" ).dialog({
         autoOpen: false,
-        width: window.innerWidth/2
+        width: width
     });
     $( "#guessEntry" ).autocomplete({
         source: characterList
     });
     $( "#guessEntry" ).change(function(){
-        console.log($( "#guessEntry" ).val())
+        if(characterList.includes($( "#guessEntry" ).val())) {
+            newGuess($( "#guessEntry" ).val())
+            $( "#guessEntry" ).val("")
+            $( "#guessEntry" ).attr("placeholder", "Guess "+String(guesses)+"/5")
+        }
+    });
+    $( "#enter" ).click(function() {
         if(characterList.includes($( "#guessEntry" ).val())) {
             newGuess($( "#guessEntry" ).val())
             $( "#guessEntry" ).val("")
