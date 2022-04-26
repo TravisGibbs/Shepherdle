@@ -294,14 +294,14 @@ $(document).ready(function(){
     $( "#answer_w").text(randomChar + " was the correct answer!")
     $( "#win" ).dialog({
         autoOpen: false,
-        width: 750
+        width: window.innerWidth/2
     });
     $( "#dialog" ).dialog({
-        width: 750
+        width: window.innerWidth/2
     });
     $( "#loss" ).dialog({
         autoOpen: false,
-        width: 750
+        width: window.innerWidth/2
     });
     $( "#guessEntry" ).autocomplete({
         source: characterList
