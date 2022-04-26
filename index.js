@@ -296,7 +296,7 @@ function newGuess(name) {
         win(name)
         let color1="yes"
     }
-    if (guesses == 6) {
+    else if (guesses == 6) {
         $("#guessEntry").attr('disabled', 'disabled');
         $( "#loss" ).on( "dialogbeforeclose", function( event, ui ) {
             location.reload();
