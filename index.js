@@ -39,7 +39,7 @@ const data = {
     },
     "Alex Karev": {
         "special": "Peds",
-        "related": ["Izzie Stevens", "Jo Wilson", "Lexie Grey", "Addison Montgomery"],
+        "related": ["Izzie Stevens", "Jo Wilson", "Lexie Grey", "Addison Montgomery", "Heather Brooks"],
         "family": [""],
         "seasons":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
     },
@@ -165,7 +165,7 @@ const data = {
     },
     "Andrew DeLuca": {
         "special": "Intern",
-        "related": ["Meredith Grey", "Maggie Pierce"],
+        "related": ["Meredith Grey", "Maggie Pierce", "Sam Bello"],
         "family": ["Carina DeLuca"],
         "seasons":[12,13,14,15,16,17]
     },
@@ -211,6 +211,42 @@ const data = {
         "family": ["Jackson Avery"],
         "seasons":[12,13,14,15,16,17]
     },
+    "Nico Kim": {
+        "special": "Ortho",
+        "related": ["Levi Schmitt"],
+        "family": [],
+        "seasons":[15,16,17,18]
+    },
+    "Levi Schmitt": {
+        "special": "Intern",
+        "related": ["Nico Kim"],
+        "family": [],
+        "seasons":[14,15,16,17,18]
+    },
+    "Nicole Herman": {
+        "special": "OB",
+        "related": [],
+        "family": [],
+        "seasons":[11]
+    },
+    "Heather Brooks": {
+        "special": "Intern",
+        "related": ["Alex Karev"],
+        "family": [],
+        "seasons":[9,10]
+    },
+    "Sam Bello": {
+        "special": "Intern",
+        "related": ["Andrew DeLuca"],
+        "family": [],
+        "seasons":[14]
+    },
+    "Megan Hunt": {
+        "special": "Trauma",
+        "related": ["Nathan Riggs"],
+        "family": ["Owen Hunt"],
+        "seasons":[14,15,18]
+    },
 }
 
 const specials = {
@@ -227,7 +263,8 @@ const characterList = ["Meredith Grey", "Cristina Yang", "Izzie Stevens", "Alex 
 , "Mark Sloan", "Lexie Grey", "Erica Hahn", "Owen Hunt", "Arizona Robbins", "Teddy Altman", "April Kepner",
 "Jackson Avery", "Jo Wilson", "Shane Ross", "Stephanie Edwards", "Leah Murphy", "Amelia Shepherd", "Maggie Pierce",
 "Benjamin Warren", "Nathan Riggs", "Andrew DeLuca", "Thomas Koracick", "Atticus Lincoln", "Ellis Grey",
- "Penny Blake", "Eliza Minnick", "Paul Stadler", "Carina DeLuca", "Catherine Fox",]
+ "Penny Blake", "Eliza Minnick", "Paul Stadler", "Carina DeLuca", "Catherine Fox", "Nico Kim", "Levi Schmitt", "Nicole Herman"
+,"Heather Brooks", "Sam Bello", "Megan Hunt"]
 var randomChar = characterList[Math.floor(Math.random() * characterList.length)];
 
 function win(name) {
