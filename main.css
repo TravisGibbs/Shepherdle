@@ -32,6 +32,24 @@ body {
     margin: 0px;
 }
 
+.hidden {
+    display: none !important;
+}
+
+.mobile-width {
+    width: 50%; 
+    margin-left: 25%; 
+    margin-right: 25%; 
+    text-align: center;
+}
+
+.web-width {
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+}
+
 .color1 {
     color: #405574;
 }

@@ -35,25 +35,25 @@
     </head>
     <body>
         <div class="color3-background" id="dialog" title="Rules">
-            <h3>Welcome to  Shepherdle, the rules are very simple! Your goal is to determine the doctor in 5 guesses.</h3>
+            <h3 class="font">Welcome to  Shepherdle, the rules are very simple! Your goal is to determine the doctor in 5 guesses.</h3>
             <hr>
-            <h6>As you guess you will gain information about your guess doctor as they relate to the goal:</h6>
+            <h6 class="font">As you guess you will gain information about your guess doctor as they relate to the goal:</h6>
             <br>
-            <h6><b>Name Column:<br> </b>If your guess shares a name or is related by blood with the goal it will be <i class="yes">green</i>.<br> If they have been in some sort of a romantic relationship it will be <i class="maybe">yellow</i>.<br> And if there is no relationship it will be <i class="no">red</i>.</h6>
+            <h6 class="font"><b>Name Column:<br> </b>If your guess shares a name or is related by blood with the goal it will be <i class="yes">green</i>.<br> If they have been in some sort of a romantic relationship it will be <i class="maybe">yellow</i>.<br> And if there is no relationship it will be <i class="no">red</i>.</h6>
             <br>
-            <h6><b>Seasons Column: </b><br>If your guess shares a majority of its seasons with the goal character it will be <i class="yes">green</i>.<br> If they share some seasons but not most it will be <i class="maybe">yellow</i>.<br> If they share none it will be <i class="no">red</i>.</h6>
+            <h6 class="font"><b>Seasons Column: </b><br>If your guess shares a majority of its seasons with the goal character it will be <i class="yes">green</i>.<br> If they share some seasons but not most it will be <i class="maybe">yellow</i>.<br> If they share none it will be <i class="no">red</i>.</h6>
             <br>
-            <h6><b>Specialty Column: </b><br>If your guess shares their specialty with the goal character the seasons column will be <i class="yes">green</i>.<br> If they have a related specialty IE peds->OB it will be <i class="maybe">yellow</i>.<br> And as you might guess if they aren't alike it will be <i class="no">red</i>.</h6>
+            <h6 class="font"><b>Specialty Column: </b><br>If your guess shares their specialty with the goal character the seasons column will be <i class="yes">green</i>.<br> If they have a related specialty IE peds->OB it will be <i class="maybe">yellow</i>.<br> And as you might guess if they aren't alike it will be <i class="no">red</i>.</h6>
             <br>
         </div>
         <div class="color3-background" id="win" title="Congrats">
-            <h1>You Won!</h1>
-            <h3 id="answer_w"></h3>
+            <h1 class="font">You Won!</h1>
+            <h3 class="font" id="answer_w"></h3>
             <img src="https://media1.tenor.com/images/b40d7aeee5a5bc91b46e49067e50edb7/tenor.gif?itemid=12479139" alt="win GIF" width="100%">
         </div>
         <div class="color3-background" id="loss" title="Oh No :(">
-            <h1>You Lost...</h1>
-            <h3 id="answer_l"></h3>
+            <h1 class="font">You Lost...</h1>
+            <h3 class="font" id="answer_l"></h3>
             <img src="https://media.giphy.com/media/QuSCZHUBKLyG4/giphy.gif" alt="loss GIF" width="100%">
         </div>
         <nav class="navbar navbar-expand-lg navbar-light color1-background bg-light">
@@ -64,7 +64,7 @@
                     <button id="rules-button" class="btn color3 font color1-background" href="">Learn to Play!</button>
                 </li>
                 <li class="nav-item">
-                  <button id="refresh-button" class="btn color3 color1-background" href="">New Character</button>
+                  <button id="refresh-button" class="btn color3 font color1-background" href="">New Character</button>
                 </li>
           </nav>
         <div class="container color3-background">
@@ -72,21 +72,21 @@
                 <h1 style="font-family: mainFont;">Shepherdle</h1>
                 <h4 style="font-family: mainFont; font-style: italic;">The medical show character guessing game ;)</h4>
                 <hr>
-                <div style="width: 50%; margin-left: 25%; margin-right: 25%; text-align: center;" class="form-group">
-                    <label for="exampleInputEmail1">Enter Your Guess</label>
-                    <input style="text-align: center;" type="name" class="form-control-lg form-control" id="guessEntry" placeholder="Guess 1/5">
-                    <small id="flavorText" class="form-text text-muted"></small>
+                <div id="form-con" class="form-group web-width">
+                    <label class="font" for="exampleInputEmail1">Enter Your Guess</label>
+                    <input style="text-align: center;" type="name" class="font form-control-lg form-control" id="guessEntry" placeholder="Guess 1/5">
+                    <small id="flavorText" class="font form-text text-muted"></small>
                 </div>
-                <button id="enter" class="btn color3 color1-background">Enter</button>
+                <button id="enter" class="btn font color3 color1-background">Enter</button>
                 <hr>
             </div>
             <div class="row center">
                 <table class="table">
                     <thead class="color2-background">
                       <tr style="color: whitesmoke;">
-                        <th scope="col">Name</th>
-                        <th scope="col">Specialty</th>
-                        <th scope="col">Seasons</th>
+                        <th class="font" scope="col">Name</th>
+                        <th class="font" scope="col">Specialty</th>
+                        <th class="font" scope="col">Seasons</th>
                         <!-- <th scope="col">Handle</th> -->
                       </tr>
                     </thead>
