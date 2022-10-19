@@ -1,3 +1,3 @@
 # Shepherdle
 
-Project for my gf to see that I can build a wordle type thing?
+Grey's anatomy clone of wordle. Built as a gift my girlfriend :).
